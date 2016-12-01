@@ -50,6 +50,18 @@ h2 {
   background-color: blue;
 }
 
+.square {
+	display: inline-block;
+	left: 1.5%;
+	top: 2px;
+	height: 32%; width: 32%;
+	border-radius: 10%;
+	overflow: hidden;
+	background-color: white;
+	cursor: pointer;
+	border: 1px solid black;
+}
+
 footer {
   background-color: #ED3D88; /*magenta*/
   text-align: center;
