@@ -4,9 +4,9 @@ A simple tic tac toe game using html, css and javascript.
 ---------------------
 ## Basic Requirements
 
-1. A user should be able to click on different squares to make a move
-2. Each click will alternate between marking an X and O in turn
-3. A cell should not be able to be replayed once marked
+1. A user should be able to click on different squares to make a move.
+2. Each click will alternate between marking an X and O in turn.
+3. A cell should not be able to be replayed once marked.
 4. Add a reset button that will clear the contents of the board.
 
 ## Future Features
@@ -16,4 +16,4 @@ A simple tic tac toe game using html, css and javascript.
 
 
 -------------------
-*This tic tac toe lab was done during week 2 day 4 of the Full Stack Web Development Immersive Program. *Designed and Developed by Stephanie Blondet, November 2016
+*This tic tac toe lab was done during week 2 day 4 of the Full Stack Web Development Immersive Program at General Assembly. *Designed and Developed by Stephanie Blondet, November 2016
