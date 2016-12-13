@@ -23,7 +23,7 @@ h2 {
 }
 
 #clear-board {
-  margin: 5% auto;
+  margin: 2% auto 3%;
   display: block;
   width: 10em;
   font-family: 'Oswald', sans-serif;
@@ -56,20 +56,19 @@ h2 {
 	left: 1.5%;
 	top: 2px;
 	height: 32%; width: 32%;
-	border-radius: 10%;
+	/*border-radius: 10%;*/
 	overflow: hidden;
 	background-color: #FFC3E7;
     font-family: 'Permanent Marker', cursive;
     font-size: 150px;
     color: #ED3D88;
-
     text-align: center;
 	cursor: pointer;
-	border: 1px solid black;
+	border: 0.5px solid grey;
 }
 
 footer {
-  background-color: #ED3D88; /*magenta*/
+  background-color: #0E91A6; /*bluegreen*/
   text-align: center;
   font-family: 'Oswald', sans-serif;
   font-weight: 300;
