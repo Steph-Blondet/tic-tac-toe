@@ -1,6 +1,8 @@
 # Tic Tac Toe Lab
 A simple tic tac toe game using html, css and javascript.
 
+[Link to the live site](https://steph-blondet.github.io/tic-tac-toe/)
+
 ---------------------
 ## Basic Requirements
 
