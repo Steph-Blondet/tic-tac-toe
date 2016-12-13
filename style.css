@@ -47,7 +47,8 @@ h2 {
 	width: 800px;
 	height: 800px;
 	margin: 2% auto;
-  background-color: blue;
+    font-size: 0;
+    /*background-color: blue;*/
 }
 
 .square {
@@ -57,7 +58,12 @@ h2 {
 	height: 32%; width: 32%;
 	border-radius: 10%;
 	overflow: hidden;
-	background-color: white;
+	background-color: #FFC3E7;
+    font-family: 'Permanent Marker', cursive;
+    font-size: 150px;
+    color: #ED3D88;
+
+    text-align: center;
 	cursor: pointer;
 	border: 1px solid black;
 }
