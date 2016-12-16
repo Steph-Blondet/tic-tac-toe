@@ -11,6 +11,8 @@ A simple tic tac toe game using html, css and javascript.
 3. A cell should not be able to be replayed once marked.
 4. Add a reset button that will clear the contents of the board.
 
+![Tic Tac Toe Screen Shot](images/tic-tac-toe-web app.png "Tic Tac Toe Screen Shot")
+
 ## Future Features
 
 1. Fix the display message that indicates which turn is about to be played.
