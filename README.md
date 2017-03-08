@@ -23,4 +23,4 @@ A simple tic tac toe game using html, css and javascript.
 1. Fix click event on squares so it can be played on the phone.
 
 -------------------
-This tic tac toe lab was done during week 2 day 4 of the Full Stack Web Development Immersive Program at General Assembly. Designed and Developed by Stephanie Blondet, November 2016. *Last modified: March 2017.
+This tic tac toe lab was done during week 2 day 4 of the Full Stack Web Development Immersive Program at General Assembly. Designed and Developed by Stephanie Blondet, November 2016. *Last modified: March 2017.*
