@@ -67,11 +67,11 @@ var game = function() {
 		if (turn) { // if statement to determine whether X or O is displayed
 			this.innerHTML = 'X';
 			turnsText.innerHTML = "It's O's turn";
-			// equis.push(this.id); // push id into equis
+			equis.push(this.id); // push id into equis
 		} else {
 			this.innerHTML = '0';
 			turnsText.innerHTML = "It's X's turn";
-			// cero.push(this.id); // push id into cero
+			cero.push(this.id); // push id into cero
 		}
 
 		this.className += " clicked"; // adding class of clicked
