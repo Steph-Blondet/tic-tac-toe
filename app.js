@@ -7,6 +7,8 @@ window.onload = function() {
 	var board = document.querySelector('#board');
 	var reset = document.querySelector('#clear-board');
 
+
+
 	reset.addEventListener('click', createBoard); // event listener for clear board button
 
 	createBoard(); // board function is the same as the clear board handler
@@ -22,6 +24,7 @@ var numTurns; // number of turns used to determine a tie
 var equis,
     cero; // positions of X and O
 
+var turnsText = document.querySelector('h2');
 
 // WINNING CONDITIONS
 var winningConditions = [
@@ -36,12 +39,14 @@ var createBoard = function() {
 	console.log('board is created'); // to check if the board was created
 
 	turn = true;
-  numTurns = 0;
+  	numTurns = 0;
 
 	equis = [];
-  cero = [];
+  	cero = [];
 
 	board.innerHTML = ""; // clears out previously existing board
+	turnsText.classList.remove('wins');
+	turnsText.innerHTML = "It's X's turn";
 
 	for (var i=0; i < 9; i++) { // creating 9 divs and giving each one an event listener
 		var square = document.createElement('div'); // creating div
@@ -56,14 +61,18 @@ var createBoard = function() {
 // INDIVIDUAL SQUARES
 var game = function() {
 	console.log('a square has been clicked'); // to check when a square has been clicked
+	console.log(turn);
+
 
 	if (!this.className.includes("clicked")) { // a user won't be able to click again on a square if the div includes the class clicked
 
 		if (turn) { // if statement to determine whether X or O is displayed
 			this.innerHTML = 'X';
+			turnsText.innerHTML = "It's O's turn";
 			equis.push(this.id); // push id into equis
 		} else {
 			this.innerHTML = '0';
+			turnsText.innerHTML = "It's X's turn";
 			cero.push(this.id); // push id into cero
 		}
 
@@ -86,11 +95,15 @@ var checkingWin = function() {
 
 	if (checkSpaces(equis)) {
 		for (var i=0; i < squares.length; i++) {
-			squares[i].innerHTML = 'X wins'
+			squares[i].innerHTML = 'X';
+			turnsText.innerHTML = "X wins";
+			turnsText.className = 'wins';
 		}
 	} else if (checkSpaces(cero)) {
 		for (var j=0; j < squares.length; j++) {
-			squares[j].innerHTML = '0 wins'
+			squares[j].innerHTML = '0';
+			turnsText.innerHTML = "0 wins";
+			turnsText.className = 'wins';
 		}
 	} else if (numTurns == 9) {
 		board.innerHTML = "Nobody won.";
