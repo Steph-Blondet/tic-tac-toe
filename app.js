@@ -45,7 +45,8 @@ var createBoard = function() {
   	cero = [];
 
 	board.innerHTML = ""; // clears out previously existing board
-
+	turnsText.classList.remove('wins');
+	turnsText.innerHTML = "It's X's turn";
 
 	for (var i=0; i < 9; i++) { // creating 9 divs and giving each one an event listener
 		var square = document.createElement('div'); // creating div

@@ -17,7 +17,7 @@ h2 {
   font-family: 'Oswald', sans-serif;
   text-align: center;
   font-weight: 400;
-  font-size: 2.5em;
+  font-size: 3.5em;
   margin: 2%;
   color: grey;
 }
@@ -70,7 +70,7 @@ h2 {
 .wins {
     background-color: #0054A6;
     color: white;
-    width: 8em;
+    width: 6em;
     padding: 0.1em;
     margin: 1% auto;
     transition: transform .5s;
