@@ -46,6 +46,7 @@ var createBoard = function() {
 
 	board.innerHTML = ""; // clears out previously existing board
 
+
 	for (var i=0; i < 9; i++) { // creating 9 divs and giving each one an event listener
 		var square = document.createElement('div'); // creating div
 		square.classList.add('square'); // adding the square class to the div
@@ -93,13 +94,15 @@ var checkingWin = function() {
 
 	if (checkSpaces(equis)) {
 		for (var i=0; i < squares.length; i++) {
-			squares[i].innerHTML = 'X wins';
+			squares[i].innerHTML = 'X';
 			turnsText.innerHTML = "X wins";
+			turnsText.className = 'wins';
 		}
 	} else if (checkSpaces(cero)) {
 		for (var j=0; j < squares.length; j++) {
-			squares[j].innerHTML = '0 wins';
+			squares[j].innerHTML = '0';
 			turnsText.innerHTML = "0 wins";
+			turnsText.className = 'wins';
 		}
 	} else if (numTurns == 9) {
 		board.innerHTML = "Nobody won.";
