@@ -77,6 +77,16 @@ h2 {
     transform:  scale(1.5);
 }
 
+.wins {
+    background-color: #0054A6;
+    color: white;
+    width: 6em;
+    padding: 0.1em;
+    margin: 1% auto;
+    transition: transform .5s;
+    transform:  scale(1.5);
+}
+
 footer {
   background-color: #0E91A6; /*bluegreen*/
   text-align: center;
