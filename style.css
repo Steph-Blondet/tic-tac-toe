@@ -9,7 +9,7 @@ h1 {
   text-transform: uppercase;
   text-align: center;
   font-size: 6em;
-  margin: 1%;
+  margin: 1% 0 2%;
   letter-spacing: 0.05em;
 }
 
@@ -17,13 +17,13 @@ h2 {
   font-family: 'Oswald', sans-serif;
   text-align: center;
   font-weight: 400;
-  font-size: 2.5em;
+  font-size: 3.5em;
   margin: 2%;
   color: grey;
 }
 
 #clear-board {
-  margin: 2% auto 3%;
+  margin: 4% auto 3%;
   display: block;
   width: 10em;
   font-family: 'Oswald', sans-serif;
@@ -34,12 +34,12 @@ h2 {
   box-shadow: 3px 3px 5px #888888;
   background-color: #0E91A6; /*bluegreen*/
   color: white;
-  padding: 0.7em;
+  padding: 1em;
   letter-spacing: 0.05em;
 }
 
 #clear-board:hover {
-  background-color: #0054A6; /*blue*/
+  background-color: grey; /*blue*/
   color: white;
 }
 
@@ -65,6 +65,16 @@ h2 {
     text-align: center;
 	cursor: pointer;
 	border: 0.5px solid grey;
+}
+
+.wins {
+    background-color: #0054A6;
+    color: white;
+    width: 6em;
+    padding: 0.1em;
+    margin: 1% auto;
+    transition: transform .5s;
+    transform:  scale(1.5);
 }
 
 footer {
