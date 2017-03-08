@@ -94,10 +94,12 @@ var checkingWin = function() {
 	if (checkSpaces(equis)) {
 		for (var i=0; i < squares.length; i++) {
 			squares[i].innerHTML = 'X wins';
+			turnsText.innerHTML = "X wins";
 		}
 	} else if (checkSpaces(cero)) {
 		for (var j=0; j < squares.length; j++) {
 			squares[j].innerHTML = '0 wins';
+			turnsText.innerHTML = "0 wins";
 		}
 	} else if (numTurns == 9) {
 		board.innerHTML = "Nobody won.";
